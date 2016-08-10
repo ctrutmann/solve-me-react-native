@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/Libraries/Text/RCTText.m \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/Libraries/Text/RCTText.h \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/Libraries/Text/RCTShadowText.h \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/Libraries/Text/RCTText.m \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/Libraries/Text/RCTText.h \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/Libraries/Text/RCTShadowText.h \
   ../../React/Views/RCTShadowView.h ../../React/CSSLayout/CSSLayout.h \
   ../../React/CSSLayout/CSSMacros.h ../../React/Views/RCTComponent.h \
   ../../React/Base/RCTRootView.h ../../React/Base/RCTBridge.h \

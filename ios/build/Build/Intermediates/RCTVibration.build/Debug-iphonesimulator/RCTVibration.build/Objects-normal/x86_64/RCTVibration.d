@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/Libraries/Vibration/RCTVibration.m \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/Libraries/Vibration/RCTVibration.h \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/Libraries/Vibration/RCTVibration.m \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/Libraries/Vibration/RCTVibration.h \
   ../../React/Base/RCTBridgeModule.h ../../React/Base/RCTDefines.h

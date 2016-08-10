@@ -15,7 +15,7 @@ import {
 
 import Register from './register';
 
-class AwesomeProject extends Component {
+class SolveMe extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -32,4 +32,4 @@ const styles = StyleSheet.create({
   },
 })
 
-AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
+AppRegistry.registerComponent('SolveMe', () => SolveMe);

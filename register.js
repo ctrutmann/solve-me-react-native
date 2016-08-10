@@ -70,7 +70,7 @@ class Register extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.heading}>
-          Hello World!
+          Join Solve.me!
         </Text>
         <TextInput
           onChangeText={ (text)=> this.setState({first_name: text}) }
