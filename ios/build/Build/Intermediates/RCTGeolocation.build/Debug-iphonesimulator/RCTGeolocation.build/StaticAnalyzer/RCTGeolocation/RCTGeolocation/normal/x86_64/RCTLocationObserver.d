@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/Libraries/Geolocation/RCTLocationObserver.m \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/Libraries/Geolocation/RCTLocationObserver.h \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/Libraries/Geolocation/RCTLocationObserver.m \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/Libraries/Geolocation/RCTLocationObserver.h \
   ../../React/Modules/RCTEventEmitter.h ../../React/Base/RCTBridge.h \
   ../../React/Base/RCTBridgeDelegate.h \
   ../../React/Base/RCTJavaScriptLoader.h \

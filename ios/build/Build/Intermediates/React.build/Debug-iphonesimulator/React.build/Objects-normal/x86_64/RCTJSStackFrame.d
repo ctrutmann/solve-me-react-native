@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/React/Base/RCTJSStackFrame.m \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/React/Base/RCTJSStackFrame.h \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/React/Base/RCTLog.h \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/React/Base/RCTDefines.h
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/React/Base/RCTJSStackFrame.m \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/React/Base/RCTJSStackFrame.h \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/React/Base/RCTDefines.h

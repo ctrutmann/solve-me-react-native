@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/Libraries/Image/RCTImageViewManager.m \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/Libraries/Image/RCTImageViewManager.h \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/Libraries/Image/RCTImageViewManager.m \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/Libraries/Image/RCTImageViewManager.h \
   ../../React/Views/RCTViewManager.h ../../React/Base/RCTBridgeModule.h \
   ../../React/Base/RCTDefines.h ../../React/Base/RCTConvert.h \
   ../../React/CSSLayout/CSSLayout.h ../../React/CSSLayout/CSSMacros.h \
@@ -14,9 +14,9 @@ dependencies: \
   ../../React/Base/RCTJavaScriptLoader.h \
   ../../React/Base/RCTFrameUpdate.h ../../React/Base/RCTInvalidating.h \
   ../../React/Views/UIView+React.h ../../React/Views/RCTComponent.h \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/Libraries/Image/RCTImageLoader.h \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/Libraries/Image/RCTImageLoader.h \
   ../../React/Base/RCTURLRequestHandler.h \
   ../../React/Base/RCTURLRequestDelegate.h \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/Libraries/Image/RCTResizeMode.h \
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/Libraries/Image/RCTResizeMode.h \
   ../../React/Base/RCTImageSource.h \
-  /Users/ctrutmann/Desktop/AwesomeProject/node_modules/react-native/Libraries/Image/RCTImageView.h
+  /Users/ctrutmann/Desktop/solve.me/solve-me-react-native/node_modules/react-native/Libraries/Image/RCTImageView.h
