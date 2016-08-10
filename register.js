@@ -35,8 +35,8 @@ class Register extends Component {
             first_name: this.state.first_name,
             last_name: this.state.last_name,
             email: this.state.email,
-            // password: this.state.password,
-            // password_confirmation: this.state.password_confirmation
+            password: this.state.password,
+            password_confirmation: this.state.password_confirmation
           }
         })
       });
