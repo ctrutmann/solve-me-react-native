@@ -17,6 +17,7 @@ import Register from './register';
 import Login from './login';
 import Root from './root';
 import Home from './home';
+import Update from './update';
 
 class SolveMe extends Component {
   renderScene(route, navigator) {
@@ -31,6 +32,9 @@ class SolveMe extends Component {
     }
     if(route.name == 'home') {
       return <Home navigator={navigator} {...route.passProps} />
+    }
+    if(route.name == 'update') {
+      return <Update navigator={navigator} {...route.passProps} />
     }
   }
 

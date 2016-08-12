@@ -3,16 +3,57 @@ import {
   AppRegistry,
   StyleSheet,
   TouchableHighlight,
+  AsyncStorage,
   Text,
   View
 } from 'react-native';
 
+const ACCESS_TOKEN = 'access_token';
+
 class Root extends Component {
+
+  componentWillMount() {
+    this.getToken();
+  }
+
+  async getToken() {
+    try {
+      let accessToken = await AsyncStorage.getItem(ACCESS_TOKEN);
+      if(!accessToken) {
+        console.log("Token not set");
+      } else {
+        this.verifyToken(accessToken);
+      }
+    } catch(error) {
+      console.log("Something went wrong")
+    }
+  }
 
   navigate(routeName) {
     this.props.navigator.push({
       name: routeName
     })
+  }
+
+  //If token is verified we will redirect the user to the home page
+  async verifyToken(token) {
+    let accessToken = token
+
+    try {
+      let response = await fetch('http://localhost:3000/verify?session%5Baccess_token%5D='+accessToken);
+      let res = await response.text();
+      if (response.status >= 200 && response.status < 300) {
+        //Verified token means user is logged in to we redirect to home.
+        this.navigate('home');
+        console.log(res)
+      } else {
+          //Handle error
+          let error = res;
+          throw error;
+      }
+    } catch(error) {
+        console.log("error response: " + error);
+    }
   }
 
   render() {
