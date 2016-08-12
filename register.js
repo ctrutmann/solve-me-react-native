@@ -22,6 +22,15 @@ class Register extends Component {
     }
   }
 
+  redirect(routeName, token) {
+    this.props.navigator.push({
+      name: routeName,
+      passProps: {
+        accessToken: token
+      }
+    })
+  }
+
   async onRegisterPressed() {
     try {
       let response = await fetch('http://localhost:3000/users', {
@@ -46,6 +55,8 @@ class Register extends Component {
 
       if(response.status >= 200 && response.status < 300) {
         console.log("res success is: " + res);
+        let accessToken = res
+        this.redirect('home', accessToken);
       } else {
         let errors = res;
         throw errors;

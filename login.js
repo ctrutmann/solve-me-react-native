@@ -22,6 +22,15 @@ class Login extends Component {
     }
   }
 
+  redirect(routeName, token) {
+    this.props.navigator.push({
+      name: routeName,
+      passProps: {
+        accessToken: token
+      }
+    })
+  }
+
   async storeToken(accessToken) {
     try {
       await AsyncStorage.setItem(ACCESS_TOKEN, accessToken)
@@ -73,6 +82,7 @@ class Login extends Component {
         let accessToken = res;
         this.storeToken(accessToken);
         console.log("res success is: " + res);
+        this.redirect('home', accessToken);
       } else {
         let error = res;
         throw error;
