@@ -15,12 +15,32 @@ import {
 
 import Register from './register';
 import Login from './login';
+import Root from './root';
+import Home from './home';
 
 class SolveMe extends Component {
+  renderScene(route, navigator) {
+    if(route.name == 'root') {
+      return <Root navigator={navigator} />
+    }
+    if(route.name == 'register') {
+      return <Register navigator={navigator} />
+    }
+    if(route.name == 'login') {
+      return <Login navigator={navigator} />
+    }
+    if(route.name == 'home') {
+      return <Home navigator={navigator} {...route.passProps} />
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Login />
+        <Navigator
+          initialRoute={{name: 'root'}}
+          renderScene={this.renderScene.bind(this)}
+          />
       </View>
     );
   }
