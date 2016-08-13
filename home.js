@@ -12,6 +12,7 @@ import {
 
 import UserSettings from './user_settings';
 import Questionnaires from './questionnaires';
+import Messages from './messages';
 
 const ACCESS_TOKEN = 'access_token';
 
@@ -25,7 +26,6 @@ class Home extends Component {
   setTab(tabId){
     this.setState({selectedTab:tabId})
   }
-
 
   render() {
     return (
@@ -42,6 +42,13 @@ class Home extends Component {
           selected={this.state.selectedTab === 'questionnaires'}
           onPress={() => this.setTab('questionnaires')}>
           <Questionnaires />
+        </TabBarIOS.Item>
+
+        <TabBarIOS.Item
+          systemIcon='favorites'
+          selected={this.state.selectedTab === 'messages'}
+          onPress={() => this.setTab('messages')}>
+          <Messages />
         </TabBarIOS.Item>
 
       </TabBarIOS>
