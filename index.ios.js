@@ -9,6 +9,7 @@ import {
   AppRegistry,
   StyleSheet,
   Navigator,
+  TabBarIOS,
   Text,
   View
 } from 'react-native';
@@ -37,6 +38,7 @@ class SolveMe extends Component {
       return <Update navigator={navigator} {...route.passProps} />
     }
   }
+
 
   render() {
     return (
