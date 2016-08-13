@@ -10,7 +10,7 @@ import {
   View
 } from 'react-native';
 
-import UserSettings from './user_settings';
+import UserProfile from './user_profile';
 import Questionnaires from './questionnaires';
 import Messages from './messages';
 
@@ -20,7 +20,7 @@ class Home extends Component {
   constructor() {
     super();
     this.state = {
-      selectedTab: 'user_settings'
+      selectedTab: 'user_profile'
     }
   }
   setTab(tabId){
@@ -32,9 +32,9 @@ class Home extends Component {
       <TabBarIOS>
         <TabBarIOS.Item
           systemIcon='contacts'
-          selected={this.state.selectedTab === 'user_settings'}
-          onPress={() => this.setTab('user_settings')}>
-          <UserSettings />
+          selected={this.state.selectedTab === 'user_profile'}
+          onPress={() => this.setTab('user_profile')}>
+          <UserProfile />
         </TabBarIOS.Item>
 
         <TabBarIOS.Item
