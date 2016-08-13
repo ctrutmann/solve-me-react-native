@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 
 import UserSettings from './user_settings';
-import Login from './login';
+import Questionnaires from './questionnaires';
 
 const ACCESS_TOKEN = 'access_token';
 
@@ -25,7 +25,7 @@ class Home extends Component {
   setTab(tabId){
     this.setState({selectedTab:tabId})
   }
-  
+
 
   render() {
     return (
@@ -39,9 +39,9 @@ class Home extends Component {
 
         <TabBarIOS.Item
           systemIcon='history'
-          selected={this.state.selectedTab === 'login'}
-          onPress={() => this.setTab('login')}>
-          <Login />
+          selected={this.state.selectedTab === 'questionnaires'}
+          onPress={() => this.setTab('questionnaires')}>
+          <Questionnaires />
         </TabBarIOS.Item>
 
       </TabBarIOS>
