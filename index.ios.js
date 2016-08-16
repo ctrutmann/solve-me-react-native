@@ -14,11 +14,14 @@ import {
   View
 } from 'react-native';
 
-import Register from './register';
-import Login from './login';
-import Root from './root';
-import Home from './home';
-import Update from './update';
+import Root from './components/root';
+import Register from './components/register';
+import Login from './components/login';
+import Home from './components/home';
+import UserProfile from './components/user_profile';
+import UserSettings from './components/user_settings';
+import Update from './components/update';
+import NavigationBar from './components/navigation_bar';
 
 class SolveMe extends Component {
   renderScene(route, navigator) {
@@ -34,6 +37,12 @@ class SolveMe extends Component {
     if(route.name == 'home') {
       return <Home navigator={navigator} {...route.passProps} />
     }
+    if(route.name == 'user_profile') {
+      return <UserProfile navigator={navigator} {...route.passProps} />
+    }
+    if(route.name == 'user_settings') {
+      return <UserSettings navigator={navigator} {...route.passProps} />
+    }
     if(route.name == 'update') {
       return <Update navigator={navigator} {...route.passProps} />
     }
@@ -42,12 +51,11 @@ class SolveMe extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Navigator
-          initialRoute={{name: 'root'}}
-          renderScene={this.renderScene.bind(this)}
-          />
-      </View>
+      <Navigator style={{ flex:1, backgroundColor:'red' }}
+        initialRoute={{ name: 'root', title: 'Solve.Me' }}
+        renderScene={ this.renderScene }
+        navigationBar = { NavigationBar }
+      />
     );
   }
 }
