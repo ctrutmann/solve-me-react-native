@@ -56,21 +56,21 @@ class Home extends Component {
           systemIcon='contacts'
           selected={this.state.selectedTab === 'user_profile'}
           onPress={() => this.setTab('user_profile')}>
-          <UserProfile passProps={this.state.accessToken}/>
+          <UserProfile navigator={this.props.navigator} passProps={this.state.accessToken}/>
         </TabBarIOS.Item>
 
         <TabBarIOS.Item
           systemIcon='history'
           selected={this.state.selectedTab === 'questionnaires'}
           onPress={() => this.setTab('questionnaires')}>
-          <Questionnaires />
+          <Questionnaires navigator={this.props.navigator} />
         </TabBarIOS.Item>
 
         <TabBarIOS.Item
           systemIcon='favorites'
           selected={this.state.selectedTab === 'messages'}
           onPress={() => this.setTab('messages')}>
-          <Messages />
+          <Messages navigator={this.props.navigator} />
         </TabBarIOS.Item>
 
       </TabBarIOS>
