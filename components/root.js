@@ -4,6 +4,7 @@ import {
   StyleSheet,
   TouchableHighlight,
   AsyncStorage,
+  // Navigator,
   Text,
   View
 } from 'react-native';
@@ -58,7 +59,7 @@ class Root extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.mainContainer}>
 
         <Text style={styles.title}> Welcome to Solve.Me</Text>
         <TouchableHighlight onPress={this.navigate.bind(this, 'login')} style={styles.button}>
@@ -74,7 +75,7 @@ class Root extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  mainContainer: {
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',

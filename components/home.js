@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
-  TouchableHighlight,
+  // TouchableHighlight,
   AsyncStorage,
-  AlertIOS,
+  // AlertIOS,
   TabBarIOS,
   Text,
   View
@@ -13,16 +13,38 @@ import {
 import UserProfile from './user_profile';
 import Questionnaires from './questionnaires';
 import Messages from './messages';
+import NavigationBar from './navigation_bar';
 
 const ACCESS_TOKEN = 'access_token';
 
 class Home extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      selectedTab: 'user_profile'
+      accessToken: '',
+      selectedTab: 'user_profile',
     }
   }
+
+  componentWillMount() {
+    this.getToken();
+  }
+
+  async getToken() {
+    try {
+      let accessToken = await AsyncStorage.getItem(ACCESS_TOKEN);
+      if(!accessToken) {
+        this.redirect('login');
+      } else {
+        this.setState({accessToken: accessToken});
+        console.log(this.state.accessToken);
+      }
+    } catch(error) {
+      console.log("Something went wrong")
+      this.redirect('login')
+    }
+  }
+
   setTab(tabId){
     this.setState({selectedTab:tabId})
   }
@@ -34,7 +56,7 @@ class Home extends Component {
           systemIcon='contacts'
           selected={this.state.selectedTab === 'user_profile'}
           onPress={() => this.setTab('user_profile')}>
-          <UserProfile />
+          <UserProfile passProps={this.state.accessToken}/>
         </TabBarIOS.Item>
 
         <TabBarIOS.Item

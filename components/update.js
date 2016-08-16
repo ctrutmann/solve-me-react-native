@@ -64,6 +64,7 @@ class Update extends Component {
         this.redirect('login');
     }
   }
+
   async onUpdatePressed() {
     this.setState({showProgress: true});
     let access_token = this.state.accessToken;
