@@ -67,18 +67,14 @@ class UserProfile extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}> Welcome {this.state.first_name} </Text>
+        <Text style={styles.title}> Welcome { this.state.first_name } </Text>
 
         <TouchableHighlight style={styles.button}>
-          <Text style={styles.buttonText}>
-            My Quiz
-          </Text>
+          <Text style={styles.buttonText}> My Quiz </Text>
         </TouchableHighlight>
 
-        <TouchableHighlight style={styles.button} onPress={this.redirect.bind(this, 'user_settings')}>
-          <Text style={styles.buttonText}>
-            My Settings
-          </Text>
+        <TouchableHighlight onPress={this.redirect.bind(this, 'user_settings')} style={styles.button}>
+          <Text style={styles.buttonText}> My Settings </Text>
         </TouchableHighlight>
       </View>
     );

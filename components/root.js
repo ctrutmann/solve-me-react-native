@@ -65,6 +65,7 @@ class Root extends Component {
         <TouchableHighlight onPress={this.navigate.bind(this, 'login')} style={styles.button}>
           <Text style={styles.buttonText}> Login </Text>
         </TouchableHighlight>
+
         <TouchableHighlight onPress={this.navigate.bind(this, 'register')} style={styles.button}>
           <Text style={styles.buttonText}> Register </Text>
         </TouchableHighlight>
