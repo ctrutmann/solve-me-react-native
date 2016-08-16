@@ -51,12 +51,11 @@ class SolveMe extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Navigator
-          initialRoute={{name: 'root'}}
-          renderScene={this.renderScene.bind(this)}
-          />
-      </View>
+      <Navigator style={{ flex:1, backgroundColor:'red' }}
+        initialRoute={{ name: 'root', title: 'Solve.Me' }}
+        renderScene={ this.renderScene }
+        navigationBar = { NavigationBar }
+      />
     );
   }
 }

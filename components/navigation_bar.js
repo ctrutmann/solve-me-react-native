@@ -9,7 +9,7 @@ import {
 const NavigationBarRouteMapper = {
 
   LeftButton: (route, navigator) => {
-    if(route.name === 'root') {
+    if(route.name === 'root' || route.name === 'home') {
       return null;
     }
 
@@ -31,7 +31,7 @@ const NavigationBarRouteMapper = {
   Title: (route) => {
     return (
       <Text style={[styles.navBarText, styles.navBarTitleText]}>
-      { route.title }
+        Solve.Me
       </Text>
     );
   },
@@ -40,12 +40,12 @@ const NavigationBarRouteMapper = {
 
 const styles = StyleSheet.create({
   navBar: {
-    backgroundColor: 'blue',
+    backgroundColor: 'red',
   },
   navBarText: {
     fontSize: 16,
     marginVertical: 10,
-    color: 'white'
+    color: 'black'
   },
   navBarTitleText: {
     fontWeight: '500',
